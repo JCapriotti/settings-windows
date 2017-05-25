@@ -23,20 +23,22 @@ choco install SQLServer2014-Developer -y --allow-empty-checksums
 #-InstallArguments "/Features:WebTools" 
 choco install visualstudio2015enterprise -y
 
-choco install git -y
-choco install resharper -y
-choco install NugetPackageExplorer -y
-choco install VirtualCloneDrive -y
-choco install virtualbox -y
-choco install notepad2 -y
-choco install ilspy -y
-choco install sysinternals -y
-choco install Powershell -y
-choco install cmder -y
-choco install nssm -y
-choco install scriptcs -y
-choco install slickrun -y
-choco install rsat.featurepack -y
-choco install octopusdeploy.tentacle -y
-choco install OctopusTools -y
-choco install nodejs.install -y
+choco install -y git 
+choco install -y resharper 
+choco install -y NugetPackageExplorer 
+choco install -y VirtualCloneDrive 
+choco install -y virtualbox 
+choco install -y notepad2 
+choco install -y ilspy 
+choco install -y sysinternals 
+choco install -y Powershell 
+choco install -y cmder 
+choco install -y nssm 
+choco install -y scriptcs 
+choco install -y slickrun 
+choco install -y rsat.featurepack 
+choco install -y octopusdeploy.tentacle OctopusTools
+choco install -y nodejs.install
+choco install -y terraform
+
+# Aginity http://www.aginity.com/redshift/
