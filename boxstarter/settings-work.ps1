@@ -21,6 +21,10 @@ reg add HKCR\.txt /ve /f /d txtfile
 Install-ChocolateyVsixPackage "SpecFlow for 2015" https://visualstudiogallery.msdn.microsoft.com/c74211e7-cb6e-4dfa-855d-df0ad4a37dd6/file/160542/7/TechTalk.SpecFlow.Vs2015Integration.v2015.1.2.vsix
 Install-ChocolateyVsixPackage "Productivity Power Tools (2015)" https://visualstudiogallery.msdn.microsoft.com/34ebc6a2-2777-421d-8914-e29c1dfa7f5d/file/169971/3/ProPowerTools.vsix
 
+# VS Code
+code --install-extension ms-vscode.powershell
+code --install-extension DavidAnson.vscode-markdownlint
+
 # Taskbar pins
 Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Internet Explorer\iexplore.exe"
 Install-ChocolateyPinnedTaskBarItem "${env:ProgramFiles(x86)}\Google\Chrome\Application\chrome.exe"
@@ -70,3 +74,17 @@ $permission = ":(OI)(CI)(M,RD)"
 $rule1 = "$userAccount1$permission"
 $rule2 = "$userAccount2$permission"
 Invoke-Expression -Command ('icacls $path $grant $rule1 $grant $rule2')
+
+# Git repo stuff
+setx GITLAB_HOME "C:\git"
+git config --global
+
+# Enable SQL Server Browser to get TCP alias to work
+CMD /C sc config SQLBrowser start= auto
+CMD /C sc start SQLBrowser 
+
+# SQL Alias needed is:
+#  - Alias = LocalSQL
+#  - Port = <blank>
+#  - Server = .\MSSQL2014X64    (depending on instance naming)
+#  - Protocol = tcp

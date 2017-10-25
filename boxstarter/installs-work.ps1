@@ -33,6 +33,7 @@ choco install -y ilspy
 choco install -y sysinternals 
 choco install -y Powershell 
 choco install -y cmder 
+choco install -y ant
 choco install -y nssm 
 choco install -y scriptcs 
 choco install -y slickrun 
@@ -40,5 +41,8 @@ choco install -y rsat.featurepack
 choco install -y octopusdeploy.tentacle OctopusTools
 choco install -y nodejs.install
 choco install -y terraform
+choco install -y nuget.commandline
+choco install -y eCommerce-InstallLegacyDependencies
+choco install -y activebatchclient
 
 # Aginity http://www.aginity.com/redshift/
