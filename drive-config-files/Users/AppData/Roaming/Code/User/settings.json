@@ -1,0 +1,11 @@
+{
+    "extensions.ignoreRecommendations": false,
+    "files.associations": {
+        "*.cls": "vb"
+    },
+
+    "markdownlint.config": {
+        "default": true,
+        "MD003": {"style": "setext_with_atx"}
+    }    
+}
