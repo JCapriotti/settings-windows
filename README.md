@@ -3,6 +3,17 @@ windows-settings
 
 Maintains my Windows settings and installation scripts.
 
+Details
+-------
+
+### Machine Setup
+
+Machine setup scripts are in the `boxstarter` directory.
+
+### Setting Files
+
+Setting files are intended to be used as hard link targets. Links are set up in `utility\make-links.ps1`
+
 Usage
 -----
 
