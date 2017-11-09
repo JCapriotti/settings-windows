@@ -1,0 +1,66 @@
+<application>
+  <component name="dataSourceStorageLocal">
+    <data-source name="UnityLogging Development" uuid="22980479-c9da-48ff-9b92-81353eec6391">
+      <database-info product="PostgreSQL" version="08.00.0002" jdbc-version="4.2" driver-name="RedshiftJDBC" driver-version="01.02.01.1001">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <secret-storage>master_key</secret-storage>
+      <user-name>redshift_readonly</user-name>
+      <introspection-schemas>unityloggingdev:public</introspection-schemas>
+    </data-source>
+    <data-source name="UnityLogging Production" uuid="630be629-8412-4c86-ae5e-2dfccfdff5e7">
+      <database-info product="PostgreSQL" version="08.00.0002" jdbc-version="4.2" driver-name="RedshiftJDBC" driver-version="01.02.01.1001">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <secret-storage>master_key</secret-storage>
+      <user-name>redshift_readonly</user-name>
+      <introspection-schemas>unityloggingdev:public</introspection-schemas>
+    </data-source>
+    <data-source name="UnityLogging QA" uuid="5966bc3b-eb79-4087-927c-e7362caa142e">
+      <database-info product="PostgreSQL" version="08.00.0002" jdbc-version="4.2" driver-name="RedshiftJDBC" driver-version="01.02.01.1001">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <secret-storage>master_key</secret-storage>
+      <user-name>redshift_readonly</user-name>
+      <introspection-schemas>unityloggingqa:</introspection-schemas>
+    </data-source>
+    <data-source name="postgres@localhost" uuid="c7be5132-4789-48fd-a102-d5740ce70aa6">
+      <database-info product="PostgreSQL" version="9.6.3" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.1.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <introspection-schemas>jason:*|postgres:public</introspection-schemas>
+    </data-source>
+    <data-source name="GDSN via Tunnel" uuid="84c3f427-c03b-4bc7-9219-09c3e53a3615">
+      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.1.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>gdsn_readwrite</user-name>
+      <introspection-schemas>gdsn:public</introspection-schemas>
+    </data-source>
+    <data-source name="@WN7-D-JASONC4" uuid="031b3790-603e-4e59-a308-49bac0aa1bd0">
+      <database-info product="Microsoft SQL Server" version="12.00.2000" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 6.0 for SQL Server" driver-version="6.0.8112.100">
+        <extra-name-characters>$#@</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <domain-auth>true</domain-auth>
+      <introspection-schemas>*:*|BLUELABEL:|ECM_SALESHISTORY:|GOZER:|jason:|master:dbo|model:|msdb:|tempdb:</introspection-schemas>
+    </data-source>
+    <data-source name="DSSI-DEV" uuid="c279129f-6913-4d6a-9108-8ba601d61b9a">
+      <database-info product="Microsoft SQL Server" version="12.00.5203" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 6.0 for SQL Server" driver-version="6.0.8112.100">
+        <extra-name-characters>$#@</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <domain-auth>true</domain-auth>
+      <introspection-schemas>*:dbo</introspection-schemas>
+    </data-source>
+  </component>
+</application>
