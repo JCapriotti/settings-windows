@@ -1,5 +1,5 @@
 # Ninite stuff
-# https://ninite.com/?select=7zip-chrome-evernote-filezilla-foxit-gimp-java8-jdkx8-paint.net-realvnc-vlc-vscode-windirstat-winmerge
+# https://ninite.com/?select=7zip-chrome-evernote-filezilla-foxit-gimp-java8-jdkx8-paint.net-vlc-windirstat-winmerge
 
 # Boxstarter URL
 # http://boxstarter.org/package/nr/url?
@@ -21,17 +21,23 @@ choco install SQLServer2014-Developer -y --allow-empty-checksums
 
 # Figure out install args
 #-InstallArguments "/Features:WebTools" 
-choco install visualstudio2015enterprise -y
+# choco install visualstudio2015enterprise -y
+
+choco install -y visualstudio2017professional --package-parameters "--add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Microsoft.VisualStudio.Workload.NetCoreTools --passive --locale en-US"
+choco install -y dotnetcore-sdk
 
 choco install -y git 
 choco install -y resharper 
 choco install -y NugetPackageExplorer 
 choco install -y VirtualCloneDrive 
+choco install -y vnc-viewer
 choco install -y virtualbox 
 choco install -y notepad2 
 choco install -y ilspy 
 choco install -y sysinternals 
+
 choco install -y Powershell 
+choco install -y Cygwin
 choco install -y cmder 
 choco install -y ant
 choco install -y nssm 
@@ -44,5 +50,6 @@ choco install -y terraform
 choco install -y nuget.commandline
 choco install -y eCommerce-InstallLegacyDependencies
 choco install -y activebatchclient
-
-# Aginity http://www.aginity.com/redshift/
+choco install -y HxD
+choco install -y agentransack
+choco install -y postman

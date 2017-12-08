@@ -1,0 +1,451 @@
+<?xml version="1.0"?>
+<model xmlns="http://schemas.serviceml.org/smlif/2007/02">
+  <identity>
+    <name>urn:uuid:96fe1236-abf6-4a57-b54d-e9baab394fd1</name>
+    <baseURI>http://documentcollection/</baseURI>
+  </identity>
+  <xs:bufferSchema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <definitions xmlns:sfc="http://schemas.microsoft.com/sqlserver/sfc/serialization/2007/08">
+      <document>
+        <docinfo>
+          <aliases>
+            <alias>/system/schema/RegisteredServers</alias>
+          </aliases>
+          <sfc:version DomainVersion="1" />
+        </docinfo>
+        <data>
+          <xs:schema targetNamespace="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08" xmlns:sfc="http://schemas.microsoft.com/sqlserver/sfc/serialization/2007/08" xmlns:sml="http://schemas.serviceml.org/sml/2007/02" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+            <xs:element name="ServerGroup">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:any namespace="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08" processContents="skip" minOccurs="0" maxOccurs="unbounded" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="RegisteredServer">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:any namespace="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08" processContents="skip" minOccurs="0" maxOccurs="unbounded" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <RegisteredServers:bufferData xmlns:RegisteredServers="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08">
+              <instances xmlns:sfc="http://schemas.microsoft.com/sqlserver/sfc/serialization/2007/08">
+                <document>
+                  <docinfo>
+                    <aliases>
+                      <alias>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup</alias>
+                    </aliases>
+                    <sfc:version DomainVersion="1" />
+                  </docinfo>
+                  <data>
+                    <RegisteredServers:ServerGroup xmlns:RegisteredServers="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08" xmlns:sfc="http://schemas.microsoft.com/sqlserver/sfc/serialization/2007/08" xmlns:sml="http://schemas.serviceml.org/sml/2007/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                      <RegisteredServers:RegisteredServers>
+                        <sfc:Collection>
+                          <sfc:Reference sml:ref="true">
+                            <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/RegisteredServer/wn7-d-jasonc4\mssql2014x64</sml:Uri>
+                          </sfc:Reference>
+                        </sfc:Collection>
+                      </RegisteredServers:RegisteredServers>
+                      <RegisteredServers:ServerGroups>
+                        <sfc:Collection>
+                          <sfc:Reference sml:ref="true">
+                            <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/BizTalk</sml:Uri>
+                          </sfc:Reference>
+                          <sfc:Reference sml:ref="true">
+                            <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSE</sml:Uri>
+                          </sfc:Reference>
+                          <sfc:Reference sml:ref="true">
+                            <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSI</sml:Uri>
+                          </sfc:Reference>
+                          <sfc:Reference sml:ref="true">
+                            <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI</sml:Uri>
+                          </sfc:Reference>
+                        </sfc:Collection>
+                      </RegisteredServers:ServerGroups>
+                      <RegisteredServers:Parent>
+                        <sfc:Reference sml:ref="true">
+                          <sml:Uri>/RegisteredServersStore</sml:Uri>
+                        </sfc:Reference>
+                      </RegisteredServers:Parent>
+                      <RegisteredServers:Name type="string">DatabaseEngineServerGroup</RegisteredServers:Name>
+                      <RegisteredServers:ServerType type="ServerType">DatabaseEngine</RegisteredServers:ServerType>
+                    </RegisteredServers:ServerGroup>
+                  </data>
+                </document>
+                <document>
+                  <docinfo>
+                    <aliases>
+                      <alias>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/RegisteredServer/wn7-d-jasonc4\mssql2014x64</alias>
+                    </aliases>
+                    <sfc:version DomainVersion="1" />
+                  </docinfo>
+                  <data>
+                    <RegisteredServers:RegisteredServer xmlns:RegisteredServers="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08" xmlns:sfc="http://schemas.microsoft.com/sqlserver/sfc/serialization/2007/08" xmlns:sml="http://schemas.serviceml.org/sml/2007/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                      <RegisteredServers:Parent>
+                        <sfc:Reference sml:ref="true">
+                          <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup</sml:Uri>
+                        </sfc:Reference>
+                      </RegisteredServers:Parent>
+                      <RegisteredServers:Name type="string">wn7-d-jasonc4\mssql2014x64</RegisteredServers:Name>
+                      <RegisteredServers:ServerName type="string">WN7-D-JASONC4\MSSQL2014X64</RegisteredServers:ServerName>
+                      <RegisteredServers:UseCustomConnectionColor type="boolean">false</RegisteredServers:UseCustomConnectionColor>
+                      <RegisteredServers:CustomConnectionColorArgb type="int">0</RegisteredServers:CustomConnectionColorArgb>
+                      <RegisteredServers:ServerType type="ServerType">DatabaseEngine</RegisteredServers:ServerType>
+                      <RegisteredServers:ConnectionStringWithEncryptedPassword type="string">data source=WN7-D-JASONC4\MSSQL2014X64;integrated security=True;pooling=False;multipleactiveresultsets=False</RegisteredServers:ConnectionStringWithEncryptedPassword>
+                      <RegisteredServers:CredentialPersistenceType type="CredentialPersistenceType">None</RegisteredServers:CredentialPersistenceType>
+                    </RegisteredServers:RegisteredServer>
+                  </data>
+                </document>
+                <document>
+                  <docinfo>
+                    <aliases>
+                      <alias>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/BizTalk</alias>
+                    </aliases>
+                    <sfc:version DomainVersion="1" />
+                  </docinfo>
+                  <data>
+                    <RegisteredServers:ServerGroup xmlns:RegisteredServers="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08" xmlns:sfc="http://schemas.microsoft.com/sqlserver/sfc/serialization/2007/08" xmlns:sml="http://schemas.serviceml.org/sml/2007/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                      <RegisteredServers:RegisteredServers>
+                        <sfc:Collection>
+                          <sfc:Reference sml:ref="true">
+                            <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/BizTalk/RegisteredServer/dsi-pi</sml:Uri>
+                          </sfc:Reference>
+                          <sfc:Reference sml:ref="true">
+                            <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/BizTalk/RegisteredServer/dsi-qa</sml:Uri>
+                          </sfc:Reference>
+                        </sfc:Collection>
+                      </RegisteredServers:RegisteredServers>
+                      <RegisteredServers:Parent>
+                        <sfc:Reference sml:ref="true">
+                          <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup</sml:Uri>
+                        </sfc:Reference>
+                      </RegisteredServers:Parent>
+                      <RegisteredServers:Name type="string">BizTalk</RegisteredServers:Name>
+                      <RegisteredServers:Description type="string" />
+                      <RegisteredServers:ServerType type="ServerType">DatabaseEngine</RegisteredServers:ServerType>
+                    </RegisteredServers:ServerGroup>
+                  </data>
+                </document>
+                <document>
+                  <docinfo>
+                    <aliases>
+                      <alias>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/BizTalk/RegisteredServer/dsi-pi</alias>
+                    </aliases>
+                    <sfc:version DomainVersion="1" />
+                  </docinfo>
+                  <data>
+                    <RegisteredServers:RegisteredServer xmlns:RegisteredServers="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08" xmlns:sfc="http://schemas.microsoft.com/sqlserver/sfc/serialization/2007/08" xmlns:sml="http://schemas.serviceml.org/sml/2007/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                      <RegisteredServers:Parent>
+                        <sfc:Reference sml:ref="true">
+                          <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/BizTalk</sml:Uri>
+                        </sfc:Reference>
+                      </RegisteredServers:Parent>
+                      <RegisteredServers:Name type="string">dsi-pi</RegisteredServers:Name>
+                      <RegisteredServers:Description type="string" />
+                      <RegisteredServers:ServerName type="string">sql-dsi-pi-biztalk</RegisteredServers:ServerName>
+                      <RegisteredServers:UseCustomConnectionColor type="boolean">false</RegisteredServers:UseCustomConnectionColor>
+                      <RegisteredServers:CustomConnectionColorArgb type="int">-986896</RegisteredServers:CustomConnectionColorArgb>
+                      <RegisteredServers:ServerType type="ServerType">DatabaseEngine</RegisteredServers:ServerType>
+                      <RegisteredServers:ConnectionStringWithEncryptedPassword type="string">data source=sql-dsi-pi-biztalk;integrated security=True;pooling=False;multipleactiveresultsets=False;packet size=4096</RegisteredServers:ConnectionStringWithEncryptedPassword>
+                      <RegisteredServers:CredentialPersistenceType type="CredentialPersistenceType">None</RegisteredServers:CredentialPersistenceType>
+                    </RegisteredServers:RegisteredServer>
+                  </data>
+                </document>
+                <document>
+                  <docinfo>
+                    <aliases>
+                      <alias>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/BizTalk/RegisteredServer/dsi-qa</alias>
+                    </aliases>
+                    <sfc:version DomainVersion="1" />
+                  </docinfo>
+                  <data>
+                    <RegisteredServers:RegisteredServer xmlns:RegisteredServers="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08" xmlns:sfc="http://schemas.microsoft.com/sqlserver/sfc/serialization/2007/08" xmlns:sml="http://schemas.serviceml.org/sml/2007/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                      <RegisteredServers:Parent>
+                        <sfc:Reference sml:ref="true">
+                          <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/BizTalk</sml:Uri>
+                        </sfc:Reference>
+                      </RegisteredServers:Parent>
+                      <RegisteredServers:Name type="string">dsi-qa</RegisteredServers:Name>
+                      <RegisteredServers:Description type="string" />
+                      <RegisteredServers:ServerName type="string">sql-dsi-qa-biztalk</RegisteredServers:ServerName>
+                      <RegisteredServers:UseCustomConnectionColor type="boolean">false</RegisteredServers:UseCustomConnectionColor>
+                      <RegisteredServers:CustomConnectionColorArgb type="int">-986896</RegisteredServers:CustomConnectionColorArgb>
+                      <RegisteredServers:ServerType type="ServerType">DatabaseEngine</RegisteredServers:ServerType>
+                      <RegisteredServers:ConnectionStringWithEncryptedPassword type="string">data source=sql-dsi-qa-biztalk;integrated security=True;pooling=False;multipleactiveresultsets=False;packet size=4096</RegisteredServers:ConnectionStringWithEncryptedPassword>
+                      <RegisteredServers:CredentialPersistenceType type="CredentialPersistenceType">None</RegisteredServers:CredentialPersistenceType>
+                    </RegisteredServers:RegisteredServer>
+                  </data>
+                </document>
+                <document>
+                  <docinfo>
+                    <aliases>
+                      <alias>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSE</alias>
+                    </aliases>
+                    <sfc:version DomainVersion="1" />
+                  </docinfo>
+                  <data>
+                    <RegisteredServers:ServerGroup xmlns:RegisteredServers="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08" xmlns:sfc="http://schemas.microsoft.com/sqlserver/sfc/serialization/2007/08" xmlns:sml="http://schemas.serviceml.org/sml/2007/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                      <RegisteredServers:Parent>
+                        <sfc:Reference sml:ref="true">
+                          <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup</sml:Uri>
+                        </sfc:Reference>
+                      </RegisteredServers:Parent>
+                      <RegisteredServers:Name type="string">DSE</RegisteredServers:Name>
+                      <RegisteredServers:Description type="string" />
+                      <RegisteredServers:ServerType type="ServerType">DatabaseEngine</RegisteredServers:ServerType>
+                    </RegisteredServers:ServerGroup>
+                  </data>
+                </document>
+                <document>
+                  <docinfo>
+                    <aliases>
+                      <alias>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSI</alias>
+                    </aliases>
+                    <sfc:version DomainVersion="1" />
+                  </docinfo>
+                  <data>
+                    <RegisteredServers:ServerGroup xmlns:RegisteredServers="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08" xmlns:sfc="http://schemas.microsoft.com/sqlserver/sfc/serialization/2007/08" xmlns:sml="http://schemas.serviceml.org/sml/2007/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                      <RegisteredServers:RegisteredServers>
+                        <sfc:Collection>
+                          <sfc:Reference sml:ref="true">
+                            <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSI/RegisteredServer/dsi-pi-tran</sml:Uri>
+                          </sfc:Reference>
+                        </sfc:Collection>
+                      </RegisteredServers:RegisteredServers>
+                      <RegisteredServers:Parent>
+                        <sfc:Reference sml:ref="true">
+                          <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup</sml:Uri>
+                        </sfc:Reference>
+                      </RegisteredServers:Parent>
+                      <RegisteredServers:Name type="string">DSI</RegisteredServers:Name>
+                      <RegisteredServers:Description type="string" />
+                      <RegisteredServers:ServerType type="ServerType">DatabaseEngine</RegisteredServers:ServerType>
+                    </RegisteredServers:ServerGroup>
+                  </data>
+                </document>
+                <document>
+                  <docinfo>
+                    <aliases>
+                      <alias>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSI/RegisteredServer/dsi-pi-tran</alias>
+                    </aliases>
+                    <sfc:version DomainVersion="1" />
+                  </docinfo>
+                  <data>
+                    <RegisteredServers:RegisteredServer xmlns:RegisteredServers="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08" xmlns:sfc="http://schemas.microsoft.com/sqlserver/sfc/serialization/2007/08" xmlns:sml="http://schemas.serviceml.org/sml/2007/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                      <RegisteredServers:Parent>
+                        <sfc:Reference sml:ref="true">
+                          <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSI</sml:Uri>
+                        </sfc:Reference>
+                      </RegisteredServers:Parent>
+                      <RegisteredServers:Name type="string">dsi-pi-tran</RegisteredServers:Name>
+                      <RegisteredServers:Description type="string" />
+                      <RegisteredServers:ServerName type="string">SQL-DSI-PI-TRAN</RegisteredServers:ServerName>
+                      <RegisteredServers:UseCustomConnectionColor type="boolean">false</RegisteredServers:UseCustomConnectionColor>
+                      <RegisteredServers:CustomConnectionColorArgb type="int">-986896</RegisteredServers:CustomConnectionColorArgb>
+                      <RegisteredServers:ServerType type="ServerType">DatabaseEngine</RegisteredServers:ServerType>
+                      <RegisteredServers:ConnectionStringWithEncryptedPassword type="string">data source=SQL-DSI-PI-TRAN;integrated security=True;pooling=False;multipleactiveresultsets=False;packet size=4096</RegisteredServers:ConnectionStringWithEncryptedPassword>
+                      <RegisteredServers:CredentialPersistenceType type="CredentialPersistenceType">None</RegisteredServers:CredentialPersistenceType>
+                    </RegisteredServers:RegisteredServer>
+                  </data>
+                </document>
+                <document>
+                  <docinfo>
+                    <aliases>
+                      <alias>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI</alias>
+                    </aliases>
+                    <sfc:version DomainVersion="1" />
+                  </docinfo>
+                  <data>
+                    <RegisteredServers:ServerGroup xmlns:RegisteredServers="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08" xmlns:sfc="http://schemas.microsoft.com/sqlserver/sfc/serialization/2007/08" xmlns:sml="http://schemas.serviceml.org/sml/2007/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                      <RegisteredServers:RegisteredServers>
+                        <sfc:Collection>
+                          <sfc:Reference sml:ref="true">
+                            <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI/RegisteredServer/1 - dev</sml:Uri>
+                          </sfc:Reference>
+                          <sfc:Reference sml:ref="true">
+                            <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI/RegisteredServer/2 - qe</sml:Uri>
+                          </sfc:Reference>
+                          <sfc:Reference sml:ref="true">
+                            <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI/RegisteredServer/2 - qi</sml:Uri>
+                          </sfc:Reference>
+                          <sfc:Reference sml:ref="true">
+                            <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI/RegisteredServer/3 - pi-tran</sml:Uri>
+                          </sfc:Reference>
+                          <sfc:Reference sml:ref="true">
+                            <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI/RegisteredServer/4 - pe-tran</sml:Uri>
+                          </sfc:Reference>
+                          <sfc:Reference sml:ref="true">
+                            <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI/RegisteredServer/pi-rept</sml:Uri>
+                          </sfc:Reference>
+                        </sfc:Collection>
+                      </RegisteredServers:RegisteredServers>
+                      <RegisteredServers:Parent>
+                        <sfc:Reference sml:ref="true">
+                          <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup</sml:Uri>
+                        </sfc:Reference>
+                      </RegisteredServers:Parent>
+                      <RegisteredServers:Name type="string">DSSI</RegisteredServers:Name>
+                      <RegisteredServers:Description type="string" />
+                      <RegisteredServers:ServerType type="ServerType">DatabaseEngine</RegisteredServers:ServerType>
+                    </RegisteredServers:ServerGroup>
+                  </data>
+                </document>
+                <document>
+                  <docinfo>
+                    <aliases>
+                      <alias>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI/RegisteredServer/1 - dev</alias>
+                    </aliases>
+                    <sfc:version DomainVersion="1" />
+                  </docinfo>
+                  <data>
+                    <RegisteredServers:RegisteredServer xmlns:RegisteredServers="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08" xmlns:sfc="http://schemas.microsoft.com/sqlserver/sfc/serialization/2007/08" xmlns:sml="http://schemas.serviceml.org/sml/2007/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                      <RegisteredServers:Parent>
+                        <sfc:Reference sml:ref="true">
+                          <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI</sml:Uri>
+                        </sfc:Reference>
+                      </RegisteredServers:Parent>
+                      <RegisteredServers:Name type="string">1 - dev</RegisteredServers:Name>
+                      <RegisteredServers:Description type="string" />
+                      <RegisteredServers:ServerName type="string">sql-dssi-dev-tran</RegisteredServers:ServerName>
+                      <RegisteredServers:UseCustomConnectionColor type="boolean">false</RegisteredServers:UseCustomConnectionColor>
+                      <RegisteredServers:CustomConnectionColorArgb type="int">-986896</RegisteredServers:CustomConnectionColorArgb>
+                      <RegisteredServers:ServerType type="ServerType">DatabaseEngine</RegisteredServers:ServerType>
+                      <RegisteredServers:ConnectionStringWithEncryptedPassword type="string">data source=sql-dssi-dev-tran;integrated security=True;pooling=False;multipleactiveresultsets=False;packet size=4096</RegisteredServers:ConnectionStringWithEncryptedPassword>
+                      <RegisteredServers:CredentialPersistenceType type="CredentialPersistenceType">None</RegisteredServers:CredentialPersistenceType>
+                    </RegisteredServers:RegisteredServer>
+                  </data>
+                </document>
+                <document>
+                  <docinfo>
+                    <aliases>
+                      <alias>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI/RegisteredServer/2 - qe</alias>
+                    </aliases>
+                    <sfc:version DomainVersion="1" />
+                  </docinfo>
+                  <data>
+                    <RegisteredServers:RegisteredServer xmlns:RegisteredServers="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08" xmlns:sfc="http://schemas.microsoft.com/sqlserver/sfc/serialization/2007/08" xmlns:sml="http://schemas.serviceml.org/sml/2007/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                      <RegisteredServers:Parent>
+                        <sfc:Reference sml:ref="true">
+                          <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI</sml:Uri>
+                        </sfc:Reference>
+                      </RegisteredServers:Parent>
+                      <RegisteredServers:Name type="string">2 - qe</RegisteredServers:Name>
+                      <RegisteredServers:Description type="string" />
+                      <RegisteredServers:ServerName type="string">sql-dssi-qe-tran</RegisteredServers:ServerName>
+                      <RegisteredServers:UseCustomConnectionColor type="boolean">false</RegisteredServers:UseCustomConnectionColor>
+                      <RegisteredServers:CustomConnectionColorArgb type="int">-986896</RegisteredServers:CustomConnectionColorArgb>
+                      <RegisteredServers:ServerType type="ServerType">DatabaseEngine</RegisteredServers:ServerType>
+                      <RegisteredServers:ConnectionStringWithEncryptedPassword type="string">data source=sql-dssi-qe-tran;integrated security=True;pooling=False;multipleactiveresultsets=False;packet size=4096</RegisteredServers:ConnectionStringWithEncryptedPassword>
+                      <RegisteredServers:CredentialPersistenceType type="CredentialPersistenceType">None</RegisteredServers:CredentialPersistenceType>
+                    </RegisteredServers:RegisteredServer>
+                  </data>
+                </document>
+                <document>
+                  <docinfo>
+                    <aliases>
+                      <alias>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI/RegisteredServer/2 - qi</alias>
+                    </aliases>
+                    <sfc:version DomainVersion="1" />
+                  </docinfo>
+                  <data>
+                    <RegisteredServers:RegisteredServer xmlns:RegisteredServers="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08" xmlns:sfc="http://schemas.microsoft.com/sqlserver/sfc/serialization/2007/08" xmlns:sml="http://schemas.serviceml.org/sml/2007/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                      <RegisteredServers:Parent>
+                        <sfc:Reference sml:ref="true">
+                          <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI</sml:Uri>
+                        </sfc:Reference>
+                      </RegisteredServers:Parent>
+                      <RegisteredServers:Name type="string">2 - qi</RegisteredServers:Name>
+                      <RegisteredServers:Description type="string" />
+                      <RegisteredServers:ServerName type="string">sql-dssi-qi-tran</RegisteredServers:ServerName>
+                      <RegisteredServers:UseCustomConnectionColor type="boolean">false</RegisteredServers:UseCustomConnectionColor>
+                      <RegisteredServers:CustomConnectionColorArgb type="int">-986896</RegisteredServers:CustomConnectionColorArgb>
+                      <RegisteredServers:ServerType type="ServerType">DatabaseEngine</RegisteredServers:ServerType>
+                      <RegisteredServers:ConnectionStringWithEncryptedPassword type="string">data source=sql-dssi-qi-tran;integrated security=True;pooling=False;multipleactiveresultsets=False;packet size=4096</RegisteredServers:ConnectionStringWithEncryptedPassword>
+                      <RegisteredServers:CredentialPersistenceType type="CredentialPersistenceType">None</RegisteredServers:CredentialPersistenceType>
+                    </RegisteredServers:RegisteredServer>
+                  </data>
+                </document>
+                <document>
+                  <docinfo>
+                    <aliases>
+                      <alias>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI/RegisteredServer/3 - pi-tran</alias>
+                    </aliases>
+                    <sfc:version DomainVersion="1" />
+                  </docinfo>
+                  <data>
+                    <RegisteredServers:RegisteredServer xmlns:RegisteredServers="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08" xmlns:sfc="http://schemas.microsoft.com/sqlserver/sfc/serialization/2007/08" xmlns:sml="http://schemas.serviceml.org/sml/2007/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                      <RegisteredServers:Parent>
+                        <sfc:Reference sml:ref="true">
+                          <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI</sml:Uri>
+                        </sfc:Reference>
+                      </RegisteredServers:Parent>
+                      <RegisteredServers:Name type="string">3 - pi-tran</RegisteredServers:Name>
+                      <RegisteredServers:Description type="string" />
+                      <RegisteredServers:ServerName type="string">sql-dssi-pi-tran</RegisteredServers:ServerName>
+                      <RegisteredServers:UseCustomConnectionColor type="boolean">false</RegisteredServers:UseCustomConnectionColor>
+                      <RegisteredServers:CustomConnectionColorArgb type="int">-986896</RegisteredServers:CustomConnectionColorArgb>
+                      <RegisteredServers:ServerType type="ServerType">DatabaseEngine</RegisteredServers:ServerType>
+                      <RegisteredServers:ConnectionStringWithEncryptedPassword type="string">data source=sql-dssi-pi-tran;integrated security=True;pooling=False;multipleactiveresultsets=False;packet size=4096</RegisteredServers:ConnectionStringWithEncryptedPassword>
+                      <RegisteredServers:CredentialPersistenceType type="CredentialPersistenceType">None</RegisteredServers:CredentialPersistenceType>
+                    </RegisteredServers:RegisteredServer>
+                  </data>
+                </document>
+                <document>
+                  <docinfo>
+                    <aliases>
+                      <alias>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI/RegisteredServer/4 - pe-tran</alias>
+                    </aliases>
+                    <sfc:version DomainVersion="1" />
+                  </docinfo>
+                  <data>
+                    <RegisteredServers:RegisteredServer xmlns:RegisteredServers="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08" xmlns:sfc="http://schemas.microsoft.com/sqlserver/sfc/serialization/2007/08" xmlns:sml="http://schemas.serviceml.org/sml/2007/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                      <RegisteredServers:Parent>
+                        <sfc:Reference sml:ref="true">
+                          <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI</sml:Uri>
+                        </sfc:Reference>
+                      </RegisteredServers:Parent>
+                      <RegisteredServers:Name type="string">4 - pe-tran</RegisteredServers:Name>
+                      <RegisteredServers:Description type="string" />
+                      <RegisteredServers:ServerName type="string">sql-dssi-pe-tran</RegisteredServers:ServerName>
+                      <RegisteredServers:UseCustomConnectionColor type="boolean">false</RegisteredServers:UseCustomConnectionColor>
+                      <RegisteredServers:CustomConnectionColorArgb type="int">-986896</RegisteredServers:CustomConnectionColorArgb>
+                      <RegisteredServers:ServerType type="ServerType">DatabaseEngine</RegisteredServers:ServerType>
+                      <RegisteredServers:ConnectionStringWithEncryptedPassword type="string">data source=sql-dssi-pe-tran;integrated security=True;pooling=False;multipleactiveresultsets=False;packet size=4096</RegisteredServers:ConnectionStringWithEncryptedPassword>
+                      <RegisteredServers:CredentialPersistenceType type="CredentialPersistenceType">None</RegisteredServers:CredentialPersistenceType>
+                    </RegisteredServers:RegisteredServer>
+                  </data>
+                </document>
+                <document>
+                  <docinfo>
+                    <aliases>
+                      <alias>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI/RegisteredServer/pi-rept</alias>
+                    </aliases>
+                    <sfc:version DomainVersion="1" />
+                  </docinfo>
+                  <data>
+                    <RegisteredServers:RegisteredServer xmlns:RegisteredServers="http://schemas.microsoft.com/sqlserver/RegisteredServers/2007/08" xmlns:sfc="http://schemas.microsoft.com/sqlserver/sfc/serialization/2007/08" xmlns:sml="http://schemas.serviceml.org/sml/2007/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                      <RegisteredServers:Parent>
+                        <sfc:Reference sml:ref="true">
+                          <sml:Uri>/RegisteredServersStore/ServerGroup/DatabaseEngineServerGroup/ServerGroup/DSSI</sml:Uri>
+                        </sfc:Reference>
+                      </RegisteredServers:Parent>
+                      <RegisteredServers:Name type="string">pi-rept</RegisteredServers:Name>
+                      <RegisteredServers:Description type="string" />
+                      <RegisteredServers:ServerName type="string">sql-dssi-pi-rept</RegisteredServers:ServerName>
+                      <RegisteredServers:UseCustomConnectionColor type="boolean">false</RegisteredServers:UseCustomConnectionColor>
+                      <RegisteredServers:CustomConnectionColorArgb type="int">-986896</RegisteredServers:CustomConnectionColorArgb>
+                      <RegisteredServers:ServerType type="ServerType">DatabaseEngine</RegisteredServers:ServerType>
+                      <RegisteredServers:ConnectionStringWithEncryptedPassword type="string">data source=sql-dssi-pi-rept;integrated security=True;pooling=False;multipleactiveresultsets=False;packet size=4096</RegisteredServers:ConnectionStringWithEncryptedPassword>
+                      <RegisteredServers:CredentialPersistenceType type="CredentialPersistenceType">None</RegisteredServers:CredentialPersistenceType>
+                    </RegisteredServers:RegisteredServer>
+                  </data>
+                </document>
+              </instances>
+            </RegisteredServers:bufferData>
+          </xs:schema>
+        </data>
+      </document>
+    </definitions>
+  </xs:bufferSchema>
+</model>
