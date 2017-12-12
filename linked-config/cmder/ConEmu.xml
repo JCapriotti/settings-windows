@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu" modified="2017-11-03 14:59:31" build="161206">
-		<key name=".Vanilla" modified="2017-12-08 08:47:35" build="161206">
+		<key name=".Vanilla" modified="2017-12-12 13:23:04" build="161206">
 			<value name="ColorTable00" type="dword" data="00222827"/>
 			<value name="ColorTable01" type="dword" data="009e5401"/>
 			<value name="ColorTable02" type="dword" data="0004aa74"/>
@@ -127,8 +127,8 @@
 			<value name="ConWnd Width" type="dword" data="0000009c"/>
 			<value name="ConWnd Height" type="dword" data="0000002e"/>
 			<value name="Cascaded" type="hex" data="01"/>
-			<value name="ConWnd X" type="long" data="219"/>
-			<value name="ConWnd Y" type="long" data="293"/>
+			<value name="ConWnd X" type="long" data="488"/>
+			<value name="ConWnd Y" type="long" data="-8"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="AutoSaveSizePos" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
@@ -483,9 +483,9 @@
 			<value name="DndLKey" type="hex" data="00"/>
 			<value name="DndRKey" type="hex" data="a2"/>
 			<value name="WndDragKey" type="dword" data="00121101"/>
-			<key name="Tasks" modified="2017-12-08 08:47:35" build="161206">
+			<key name="Tasks" modified="2017-12-12 13:23:04" build="161206">
 				<value name="Count" type="long" data="22"/>
-				<key name="Task1" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task1" modified="2017-12-12 13:23:04" build="161206">
 					<value name="Name" type="string" data="{Cmder VS 2017}"/>
 					<value name="GuiArgs" type="string" data="/icon &quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\devenv.exe,4&quot;"/>
 					<value name="Cmd1" type="string" data="* &gt; cmd.exe /k &quot;&quot;%ConEmuDir%\..\init.bat&quot; &amp;&amp; &quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\Tools\VsDevCmd.bat&quot;&quot;  -new_console:t:&quot;VS 2017&quot;  -new_console:d:&quot;C:\&quot;"/>
@@ -495,7 +495,7 @@
 					<value name="Flags" type="dword" data="00000005"/>
 					<value name="Cmd2" type="string" data="cd \"/>
 				</key>
-				<key name="Task2" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task2" modified="2017-12-12 13:23:04" build="161206">
 					<value name="Name" type="string" data="{PowerShell as Admin}"/>
 					<value name="GuiArgs" type="string" data=" /icon %SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe"/>
 					<value name="Cmd1" type="string" data="*PowerShell -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command &quot;Invoke-Expression '. ''%ConEmuDir%\..\profile.ps1'''&quot; -new_console:d:&quot;%USERPROFILE%&quot;:P:&quot;^&lt;Solarized^&gt;&quot;:t:&quot;PowerShell&quot;"/>
@@ -504,7 +504,7 @@
 					<value name="Hotkey" type="dword" data="00121132"/>
 					<value name="Flags" type="dword" data="00000000"/>
 				</key>
-				<key name="Task3" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task3" modified="2017-12-12 13:23:04" build="161206">
 					<value name="Name" type="string" data="{Bash}"/>
 					<value name="Hotkey" type="dword" data="00121133"/>
 					<value name="GuiArgs" type="string" data=""/>
@@ -513,7 +513,7 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Flags" type="dword" data="00000004"/>
 				</key>
-				<key name="Task4" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task4" modified="2017-12-12 13:23:04" build="161206">
 					<value name="Name" type="string" data="{scriptcs}"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=" /icon C:\ProgramData\chocolatey\lib\ScriptCs\tools\scriptcs.exe"/>
@@ -523,7 +523,7 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Flags" type="dword" data="00000000"/>
 				</key>
-				<key name="Task5" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task5" modified="2017-12-12 13:23:04" build="161206">
 					<value name="Name" type="string" data="{Cmder VS 2010}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -532,17 +532,17 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task6" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task6" modified="2017-12-12 13:23:04" build="161206">
 					<value name="Name" type="string" data="{Cmder VS 2015}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=" /icon &quot;%CMDER_ROOT%\icons\cmder.ico&quot;"/>
-					<value name="Cmd1" type="string" data="* &gt; cmd.exe /k &quot;&quot;%ConEmuDir%\..\init.bat&quot; &amp;&amp; &quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\Tools\VsDevCmd.bat&quot;&quot;  -new_console:d:&quot;C:\&quot;:t:&quot;VS 2015&quot;"/>
+					<value name="Cmd1" type="string" data="* &gt; cmd.exe /k &quot;&quot;%ConEmuDir%\..\init.bat&quot; &amp;&amp; &quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat&quot;&quot;  -new_console:d:&quot;C:\&quot;:t:&quot;VS 2015&quot;"/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd2" type="string" data="%CMDER_ROOT%vendor\git-for-windows\usr\bin\mintty.exe /bin/bash -l -new_console:d:%userProfile%"/>
 				</key>
-				<key name="Task7" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task7" modified="2017-12-12 13:23:04" build="161206">
 					<value name="Name" type="string" data="{Other::cmd}"/>
 					<value name="Flags" type="dword" data="00000002"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -551,7 +551,7 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data="cmd.exe /k &quot;%ConEmuBaseDir%\CmdInit.cmd&quot;"/>
 				</key>
-				<key name="Task8" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task8" modified="2017-12-12 13:23:04" build="161206">
 					<value name="Name" type="string" data="{Other::cmd (Admin)}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -560,7 +560,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task9" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task9" modified="2017-12-12 13:23:04" build="161206">
 					<value name="Name" type="string" data="{Other::Cmder}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -570,7 +570,7 @@
 					<value name="Cmd1" type="string" data="cmd /k &quot;%ConEmuDir%\..\init.bat&quot;  -new_console:d:C:\"/>
 					<value name="Cmd2" type="string" data="&quot;%windir%\syswow64\cmd.exe&quot; /k &quot;&quot;%ConEmuBaseDir%\CmdInit.cmd&quot; &amp; echo This is 32 bit cmd.exe -new_console:s50V&quot;"/>
 				</key>
-				<key name="Task10" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task10" modified="2017-12-12 13:23:04" build="161206">
 					<value name="Name" type="string" data="{Other::Cmder as Admin}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -580,7 +580,7 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd2" type="string" data="&quot;%windir%\syswow64\cmd.exe&quot; /k &quot;&quot;%ConEmuBaseDir%\CmdInit.cmd&quot; &amp; echo This is 32 bit cmd.exe -new_console:s50V&quot;"/>
 				</key>
-				<key name="Task11" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task11" modified="2017-12-12 13:23:04" build="161206">
 					<value name="Name" type="string" data="{Other::Powershell}"/>
 					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -590,7 +590,7 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd2" type="string" data="&quot;%windir%\syswow64\cmd.exe&quot; /k &quot;&quot;%ConEmuBaseDir%\CmdInit.cmd&quot; &amp; echo This is 32 bit cmd.exe -new_console:s50V&quot;"/>
 				</key>
-				<key name="Task12" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task12" modified="2017-12-12 13:23:04" build="161206">
 					<value name="Name" type="string" data="{Other::PowerShell (Admin)}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -600,7 +600,7 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd2" type="string" data="&quot;%windir%\syswow64\cmd.exe&quot; /k &quot;&quot;%ConEmuBaseDir%\CmdInit.cmd&quot; &amp; echo This is 32 bit cmd.exe -new_console:s50V&quot;"/>
 				</key>
-				<key name="Task13" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task13" modified="2017-12-12 13:23:04" build="161206">
 					<value name="Name" type="string" data="{Other::cmd-32}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -610,7 +610,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task14" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task14" modified="2017-12-12 13:23:04" build="161206">
 					<value name="Name" type="string" data="{Other::cmd 64/32}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -620,7 +620,7 @@
 					<value name="Count" type="long" data="2"/>
 					<value name="Cmd2" type="string" data="&quot;%windir%\syswow64\cmd.exe&quot; /k &quot;&quot;%ConEmuBaseDir%\CmdInit.cmd&quot; &amp; echo This is 32 bit cmd.exe -new_console:s50V&quot;"/>
 				</key>
-				<key name="Task15" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task15" modified="2017-12-12 13:23:04" build="161206">
 					<value name="Name" type="string" data="{Bash::CygWin bash}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -629,7 +629,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task16" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task16" modified="2017-12-12 13:23:04" build="161206">
 					<value name="Name" type="string" data="{Bash::Git bash}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -638,7 +638,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task17" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task17" modified="2017-12-12 13:23:04" build="161206">
 					<value name="Name" type="string" data="{Helper::Show ANSI colors}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -647,16 +647,16 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task18" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task18" modified="2017-12-12 13:25:21" build="161206">
 					<value name="Name" type="string" data="{SDK::WinSDK v7.0}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=""/>
-					<value name="Cmd1" type="string" data="cmd /V /K -new_console:t:&quot;WinSDK v7.0&quot;:C:&quot;C:\Program Files\Microsoft SDKs\Windows\v7.0\Setup\setup.ico&quot; &quot;C:\Program Files\Microsoft SDKs\Windows\v7.0\Bin\SetEnv.Cmd&quot;"/>
+					<value name="Cmd1" type="string" data="cmd /V /K -new_console:t:&quot;WinSDK v7.0&quot;:C:&quot;C:\Program Files\Microsoft SDKs\Windows\v7.0\Setup\setup.ico&quot;  &quot;C:\Program Files\Microsoft SDKs\Windows\v7.0\Bin\SetEnv.Cmd&quot;"/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task19" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task19" modified="2017-12-12 13:25:21" build="161206">
 					<value name="Name" type="string" data="{SDK::VS 11.0 x86 tools prompt}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -665,7 +665,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task20" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task20" modified="2017-12-12 13:25:21" build="161206">
 					<value name="Name" type="string" data="{SDK::VS 12.0 x86 tools prompt}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -674,7 +674,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task21" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task21" modified="2017-12-12 13:25:21" build="161206">
 					<value name="Name" type="string" data="{SDK::VS 14.0 x86 tools prompt}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -683,7 +683,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task22" modified="2017-12-08 08:48:14" build="161206">
+				<key name="Task22" modified="2017-12-12 13:25:21" build="161206">
 					<value name="Name" type="string" data="{Tools::Chocolatey (Admin)}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -703,11 +703,11 @@
 				</key>
 			</key>
 
-			<key name="Apps" modified="2017-12-08 08:48:14" build="161206">
+			<key name="Apps" modified="2017-12-12 13:25:21" build="161206">
 				<value name="Count" type="long" data="0"/>
 			</key>
-			<key name="Colors" modified="2017-12-08 08:48:14" build="161206">
-				<key name="Palette1" modified="2017-12-08 08:48:14" build="161206">
+			<key name="Colors" modified="2017-12-12 13:25:21" build="161206">
+				<key name="Palette1" modified="2017-12-12 13:25:21" build="161206">
 					<value name="Name" type="string" data="Monokai"/>
 					<value name="ExtendColors" type="hex" data="00"/>
 					<value name="ExtendColorIdx" type="hex" data="0e"/>
@@ -808,7 +808,7 @@
 			<value name="StatusBar.Hide.Dpi" type="hex" data="01"/>
 			<value name="TabFlashChanged" type="long" data="8"/>
 			<value name="TabModifiedSuffix" type="string" data="[*]"/>
-			<key name="HotKeys" modified="2017-12-08 08:47:35" build="161206">
+			<key name="HotKeys" modified="2017-12-12 13:23:04" build="161206">
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="00000011"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
