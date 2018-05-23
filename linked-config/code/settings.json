@@ -7,5 +7,7 @@
     "markdownlint.config": {
         "default": true,
         "MD003": {"style": "setext_with_atx"}
-    }    
+    },
+    "editor.renderWhitespace": "all",
+    "rubocop.enable": false,
 }

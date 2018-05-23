@@ -4,8 +4,8 @@ Copy-Item \\ds\home\jasonc\Backup\* C:\ -Force -Recurse
 
 # Create scheduled tasks
 $taskDir = "C:\Utility\ScheduledTasks"
-schtasks /create /xml "$taskDir\Backup.xml" /tn "Backup Files"
-schtasks /create /xml "$taskDir\LogStuff.xml" /tn "Log Stuff"
+schtasks /create /xml "$taskDir\Backup.xml" /tn "\Jason\Backup Files"
+schtasks /create /xml "$taskDir\LogStuff.xml" /tn "\Jason\Log Stuff"
 
 # Text file associations
 $textEditor = "$env:programfiles\Notepad2\Notepad2.exe"

@@ -53,3 +53,6 @@ choco install -y activebatchclient
 choco install -y HxD
 choco install -y agentransack
 choco install -y postman
+choco install -y gitlab-runner
+choco install -y vault
+choco install -y project-journal-gui -s https://proget.directsupply.cloud/nuget/prod/
