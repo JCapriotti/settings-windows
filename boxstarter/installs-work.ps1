@@ -31,7 +31,7 @@ choco install -y resharper
 choco install -y NugetPackageExplorer 
 choco install -y VirtualCloneDrive 
 choco install -y vnc-viewer
-choco install -y virtualbox 
+choco install -y virtualbox --params /NoExtensionPack
 choco install -y notepad2 
 choco install -y ilspy 
 choco install -y sysinternals 
